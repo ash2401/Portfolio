@@ -69,6 +69,6 @@ export default function Project({
         group-even:right-[initial] group-even:-left-40"
           />
         </section>
-        </motion.div>
+    </motion.div>
   )
 }
