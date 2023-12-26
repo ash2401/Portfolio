@@ -9,7 +9,7 @@ import React from 'react'
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from 'react-icons/fa'
 import { HiDownload } from "react-icons/hi";
-
+import profilePic from '../public/profilePic.jpg'
 
 export default function Intro() {
 
@@ -30,7 +30,8 @@ export default function Intro() {
                   duration: 0.2,
                 }}
                 >
-                    <Image src="https://images.unsplash.com/photo-1682686581556-a3f0ee0ed556?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                    <Image
+                    src={profilePic}
                     alt="Akshat portrait" width='192' height='192' quality='95' priority={true}
                     className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl' />
                 </motion.div>
@@ -78,12 +79,16 @@ export default function Intro() {
         >
                 Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
             </Link>
-        <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full
-        outline-none focus:scale-110 hover:scale-110
-        active:scale-105 transition cursor-pointer borderBlack' href='/CV.pdf' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
+        <a 
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          href='/CV.pdf' 
+          download>
+        Download CV
+        <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/>
+        </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/akshat-srivastava-652b32195/"
           target="_blank"
         >
@@ -91,7 +96,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/ash2401"
           target="_blank"
         >
