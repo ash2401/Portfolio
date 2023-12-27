@@ -1,7 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+import { CgLaptop, CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import "react-vertical-timeline-component/style.min.css";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdevImg.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -36,27 +36,27 @@ export const links = [
 export const experiencesData = [
   {
     title: "Mobile Developer",
-    location: "Edinburhg, UK",
+    location: "Edinburgh, UK",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Working full time as a Mobile Developer developing hybrid mobile finance related app for Computershare.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Web Development Intern",
+    location: "Bangalore, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "As a full-stack development intern, I integrated React JS, SQL, and RESTful APIs to craft dynamic web applications at Tekenlight Solutions Pvt.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Aug 2021 - Nov 2021",
+  },
+  {
+    title: "Trainee",
+    location: "Lucknow, India",
+    description:
+      "Worked in the team responsible for delivering the Home Guards mobile app for government officials at National Informatics Centre.",
+    icon: React.createElement(CgLaptop),
+    date: "Jun 2021 — Aug 2021 ",
   },
 ] as const;
 
