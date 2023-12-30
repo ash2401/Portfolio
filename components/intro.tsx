@@ -59,7 +59,7 @@ export default function Intro() {
         <span className="font-bold">front-end developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience. I enjoy
         building <span className="italic">responsive sites & apps</span>. My focus is{" "}
-        <span className="underline">Angular and React.</span>.
+        <span className="underline">Angular and React</span>.
       </motion.h1>
 
       <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
